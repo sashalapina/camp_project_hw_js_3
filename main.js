@@ -98,7 +98,7 @@ switch (true) {
   case hour >= 18 && hour < 23:
     hour_str = 'Добрый вечер';
     break;
-  case (hour >= 23 && hour < 24) || (hour >= 0 && hour < 5):
+  case hour === 23 || (hour >= 0 && hour < 5):
     hour_str = 'Доброй ночи';
     break;
   default:
